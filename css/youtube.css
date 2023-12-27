@@ -1,0 +1,90 @@
+*{
+    background-color: black;
+}
+
+input{
+    color: white;
+}
+
+.inicio{
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: -1;
+}
+
+.buscador{
+    display: flex;
+    color: white;
+    width: 150px;
+}
+
+.preferencias{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 15px;
+    justify-items: center;
+    align-content: center;
+    color: white;
+}
+
+button{
+    color: white;
+    border-radius: 10%;
+}
+
+.opciones_1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    justify-items: center;
+    color: white;
+}
+
+.opciones_2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    justify-items: center;
+    color: white;
+}
+
+section{
+    background-color: wheat;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .opciones_1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .opciones_2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .opciones_1 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .opciones_2{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+}
