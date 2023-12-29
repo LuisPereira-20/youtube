@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-<<<<<<< Updated upstream
+background-color: black;
 }
 
 /*Barra nav y aside*/
@@ -14,9 +14,6 @@
     left: 0;
     width: 100%;
     background-color: #202020;
-
-
-=======
   background-color: black;
 }
 
@@ -27,15 +24,12 @@
     left: 0;
     width: 100%;
     background-color: #202020;
->>>>>>> Stashed changes
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-<<<<<<< Updated upstream
     padding: 5px 25px;
     padding-right: 45px;
-
 }
 
 i{
@@ -47,14 +41,13 @@ i{
     position: relative;
     height: 50px;
     width: 50px;
-
 }
 
-=======
-   /* padding: 5px 25px;
+
+/* padding: 5px 25px;
     padding-right: 45px;*/
 
-}
+
 /*Barra nav y aside
 i{
     font-size: 1.5rem;
@@ -293,10 +286,6 @@ input {
   color: white;
 }
 
-=======
-}
-
-
 h1{
     font-size: 28px;
 }
@@ -434,7 +423,6 @@ h2{
   color: white;
 }
 
->>>>>>> Stashed changes
 button {
   color: white;
   border-radius: 10%;
@@ -446,22 +434,7 @@ button {
   gap: 25px;
   justify-items: center;
   color: white;
-<<<<<<< Updated upstream
-}
-
-.opciones_2 {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 25px;
-  justify-items: center;
-  color: white;
-}
-
-section {
-  background-color: wheat;
-=======
   cursor: pointer;
->>>>>>> Stashed changes
 }
 
 @media only screen and (max-width: 600px) {
@@ -476,13 +449,9 @@ section {
   .opciones_1 {
     grid-template-columns: repeat(2, 1fr);
   }
-<<<<<<< Updated upstream
-  .opciones_2 {
-    grid-template-columns: repeat(2, 1fr);
-=======
+
   .reels {
     grid-template-columns: repeat(3, 1fr);
->>>>>>> Stashed changes
   }
 }
 
@@ -491,13 +460,8 @@ section {
   .opciones_1 {
     grid-template-columns: repeat(3, 1fr);
   }
-<<<<<<< Updated upstream
-  .opciones_2 {
-    grid-template-columns: repeat(3, 1fr);
-=======
 .reels {
     grid-template-columns: repeat(4, 1fr);
->>>>>>> Stashed changes
   }
 }
 
