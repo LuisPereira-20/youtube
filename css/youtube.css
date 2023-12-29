@@ -51,8 +51,53 @@ svg{
 }
 
 h1{
-    font-size: 28px;
+    font-size: 1.5rem;
 }
+
+h4{
+  font-size: .9rem;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-left: 20px;
+}
+
+i{
+  font-size: 1.5rem;
+  color:#fff;
+
+}
+
+p,a{
+  font-size: .9rem
+}
+
+hr{
+  border: 1px solid rgba(255,255 ,255 ,.1 );
+  margin: 12px 0;
+}
+
+/*Scrollbar estilo*/
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: none;
+}
+
+::-webkit-scrollbar-thumb{
+  background: transparent;
+  border-radius: 5px;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb{
+  background: #717171;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #888;
+}
+
 
 .logo{
     display: flex;
@@ -126,16 +171,64 @@ h1{
 .contenedor-body{
   display:flex ;
   position: fixed;
-  height: calc(100vh  -60px);
+  height: calc(100vh - 60px);
   top: 60px;
 }
 
 .sidebar{
   background-color: #212121;
+  padding-top:10px ;
+  width: 240px;
+  overflow-y: scroll;
+  color: #fff;
 }
 
+.sidebar a{
+  text-decoration: none;
 
+  color: #fff;
+}
 
+.sidebar-items{
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item{
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  cursor: pointer;
+  height: 40px;
+
+}
+
+.sidebar-item:hover{
+  background-color: #4c4c4c;
+
+}
+
+.sidebar-item i{
+  margin-right: 24px;
+}
+
+.suscripciones{
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  gap: 14px;
+  margin-top: 4%;
+}
+
+.canales-txt{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.suscripciones img{
+  border-radius: 50%;
+}
 /*Para abajo main, seccion de videos, reels etc*/
 
 input {
