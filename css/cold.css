@@ -1,0 +1,42 @@
+*{
+    background-color: black;
+}
+
+.division{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.opcion{
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr;
+   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+   .principal{
+        display: grid;
+        grid-template-columns: 1fr;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+}
