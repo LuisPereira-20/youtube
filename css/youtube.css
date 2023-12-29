@@ -434,11 +434,11 @@ button {
   gap: 25px;
   justify-items: center;
   color: white;
-  cursor: pointer;
   padding-top: 75px;
 }
 .opcion{
   padding: 25px;
+  cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
 }
