@@ -441,6 +441,9 @@ button {
   cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
+  .contenedor-body{
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -455,9 +458,11 @@ button {
   .opciones_1 {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .reels {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .contenedor-body{
+    display: none;
   }
 }
 
