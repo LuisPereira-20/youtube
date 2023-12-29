@@ -39,8 +39,8 @@ i{
 
 .logo-svg{
     position: relative;
-    height: 50px;
-    width: 50px;
+    height: 20px;
+    width: 20px;
 }
 
 
@@ -435,6 +435,7 @@ button {
   justify-items: center;
   color: white;
   cursor: pointer;
+  padding-top: 75px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -442,6 +443,9 @@ button {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .contenedor-body{
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -462,6 +466,9 @@ button {
   }
 .reels {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .contenedor-body{
+    display: flex;
   }
 }
 
