@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+<<<<<<< Updated upstream
 }
 
 /*Barra nav y aside*/
@@ -15,10 +16,23 @@
     background-color: #202020;
 
 
+=======
+  background-color: black;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202020;
+>>>>>>> Stashed changes
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+<<<<<<< Updated upstream
     padding: 5px 25px;
     padding-right: 45px;
 
@@ -36,6 +50,25 @@ i{
 
 }
 
+=======
+   /* padding: 5px 25px;
+    padding-right: 45px;*/
+
+}
+/*Barra nav y aside
+i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.logo-svg{
+    position: relative;
+    height: 50px;
+    width: 50px;
+
+}
+
+>>>>>>> Stashed changes
 svg{
     position: absolute;
     top: 0;
@@ -43,6 +76,7 @@ svg{
     width: 90%;
     height: 100%;
     object-fit: cover;
+<<<<<<< Updated upstream
 }
 
 #logo-txt{
@@ -259,6 +293,148 @@ input {
   color: white;
 }
 
+=======
+}
+
+
+h1{
+    font-size: 28px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-contenedor{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-busqueda{
+    display: flex;
+    align-items: center;
+    flex: 0 1 685px;
+    margin-left: 40px;
+}
+
+.contenedor-busqueda form{
+    position: relative;
+    width: 100%;
+}
+
+.contenedor-busqueda input{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #121212;
+    border: 1px solid rgba(255,255 ,255 ,.1 );
+    padding: 12px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.boton-busqueda{
+    min-width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    background-color: #313131;
+    outline: none;
+    border: none;
+}
+
+.boton-mic{
+    min-width: 60px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+}
+
+.perfil-contenedor{
+    display: flex;
+    align-items: center;
+}
+
+.perfil-contenedor i{
+    margin-left:25px ;
+}
+
+aside
+.contenedor-body{
+  display:flex ;
+  position: fixed;
+  height: calc(100vh  -60px);
+  top: 60px;
+}
+
+.sidebar{
+  background-color: #212121;
+}
+
+
+
+/*Para abajo main, seccion de videos, reels etc*/
+
+#logo-txt{
+  letter-spacing: -1.5px;
+  color: white;
+  display: flex;
+}
+
+
+input {
+  color: white;
+}
+
+h2{
+    color: white;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.reels{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    padding: 5px;
+    color: white;
+}
+.inicio {
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: -1;
+}
+
+.buscador {
+  display: flex;
+  color: white;
+  width: 150px;
+}
+
+.preferencias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 15px;
+  justify-items: center;
+  align-content: center;
+  color: white;
+}
+
+>>>>>>> Stashed changes
 button {
   color: white;
   border-radius: 10%;
@@ -270,6 +446,7 @@ button {
   gap: 25px;
   justify-items: center;
   color: white;
+<<<<<<< Updated upstream
 }
 
 .opciones_2 {
@@ -282,6 +459,9 @@ button {
 
 section {
   background-color: wheat;
+=======
+  cursor: pointer;
+>>>>>>> Stashed changes
 }
 
 @media only screen and (max-width: 600px) {
@@ -296,8 +476,13 @@ section {
   .opciones_1 {
     grid-template-columns: repeat(2, 1fr);
   }
+<<<<<<< Updated upstream
   .opciones_2 {
     grid-template-columns: repeat(2, 1fr);
+=======
+  .reels {
+    grid-template-columns: repeat(3, 1fr);
+>>>>>>> Stashed changes
   }
 }
 
@@ -306,8 +491,13 @@ section {
   .opciones_1 {
     grid-template-columns: repeat(3, 1fr);
   }
+<<<<<<< Updated upstream
   .opciones_2 {
     grid-template-columns: repeat(3, 1fr);
+=======
+.reels {
+    grid-template-columns: repeat(4, 1fr);
+>>>>>>> Stashed changes
   }
 }
 

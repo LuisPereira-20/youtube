@@ -9,8 +9,15 @@
 
 .opcion{
     color: white;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
 }
 
+.principal{
+    color: white;
+    padding: 35px;
+}
 @media only screen and (max-width: 600px) {
 
 }
