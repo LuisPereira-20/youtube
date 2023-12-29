@@ -13,8 +13,8 @@ background-color: black;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #202020;
-  background-color: black;
+    background-color: #212121;
+
 }
 
 
@@ -23,7 +23,7 @@ background-color: black;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #202020;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,11 +44,7 @@ i{
 }
 
 
-/* padding: 5px 25px;
-    padding-right: 45px;*/
-
-
-/*Barra nav y aside
+/*Barra nav y aside*/
 i{
     font-size: 1.5rem;
     color: #fff;
@@ -61,7 +57,7 @@ i{
 
 }
 
->>>>>>> Stashed changes
+
 svg{
     position: absolute;
     top: 0;
@@ -69,7 +65,7 @@ svg{
     width: 90%;
     height: 100%;
     object-fit: cover;
-<<<<<<< Updated upstream
+
 }
 
 #logo-txt{
@@ -167,7 +163,7 @@ hr{
     align-items: center;
     justify-content: center;
     z-index: 20;
-    background-color: #313131;
+    background-color:  #212121;
     outline: none;
     border: none;
 }
@@ -436,6 +432,7 @@ button {
   color: white;
   cursor: pointer;
   padding-top: 75px;
+  
 }
 
 @media only screen and (max-width: 600px) {
