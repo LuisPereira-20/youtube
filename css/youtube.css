@@ -11,7 +11,6 @@ input{
     justify-content: center;
     align-items: center;
     color: white;
-    z-index: -1;
 }
 
 .buscador{
@@ -38,22 +37,30 @@ button{
 .opciones_1{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 50px;
     justify-items: center;
     color: white;
+    padding: 25px;
 }
 
-.opciones_2{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
+
+.opcion{
+    cursor: pointer;
+}
+
+.reels{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     justify-items: center;
-    color: white;
+    padding: 5px;
 }
 
-section{
-    background-color: wheat;
+.reel{
+    cursor: pointer;
 }
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -70,8 +77,8 @@ section{
     .opciones_1{
         grid-template-columns: repeat(2, 1fr);
     }
-    .opciones_2{
-        grid-template-columns: repeat(2, 1fr);
+    .reels{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -80,8 +87,8 @@ section{
     .opciones_1 {
         grid-template-columns: repeat(3, 1fr);
     }
-    .opciones_2{
-        grid-template-columns: repeat(3, 1fr);
+    .reels{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
