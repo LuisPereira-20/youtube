@@ -48,7 +48,7 @@ i{
     padding-right: 45px;*/
 
 
-/*Barra nav y aside
+/*Barra nav y aside*/
 i{
     font-size: 1.5rem;
     color: #fff;
@@ -61,7 +61,7 @@ i{
 
 }
 
->>>>>>> Stashed changes
+
 svg{
     position: absolute;
     top: 0;
@@ -69,7 +69,7 @@ svg{
     width: 90%;
     height: 100%;
     object-fit: cover;
-<<<<<<< Updated upstream
+
 }
 
 #logo-txt{
