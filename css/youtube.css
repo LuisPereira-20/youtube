@@ -262,13 +262,6 @@ input {
   color: white;
 }
 
-.inicio {
-  position: sticky;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  z-index: -1;
-}
 
 .buscador {
   display: flex;
@@ -399,13 +392,7 @@ h2{
     padding: 5px;
     color: white;
 }
-.inicio {
-  position: sticky;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  z-index: -1;
-}
+
 
 .buscador {
   display: flex;
@@ -440,6 +427,8 @@ button {
   padding: 25px;
   cursor: pointer;
 }
+
+
 @media only screen and (max-width: 600px) {
   .contenedor-body{
     display: none;
@@ -476,6 +465,10 @@ button {
   }
   .contenedor-body{
     display: flex;
+  }
+  .division{
+    display: grid;
+    grid-template-columns: 30% 70%;
   }
 }
 
