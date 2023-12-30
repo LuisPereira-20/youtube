@@ -8,21 +8,12 @@
 }
 
 /*Barra nav y aside*/
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #212121;
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #212121;
-
 }
 
 .header {
@@ -170,7 +161,6 @@ hr {
   border: none;
 }
 
-
 .boton-mic {
   min-width: 60px;
   height: 40px;
@@ -182,19 +172,6 @@ hr {
   align-items: center;
   justify-content: center;
   background-color: #181818;
-
-.boton-mic{
-    min-width: 60px;
-    height: 40px;
-    border-radius: 50%;
-    outline: none;
-    border: none;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #212121;
-
 }
 
 .perfil-contenedor {
@@ -270,6 +247,14 @@ hr {
 
 input {
   color: white;
+}
+
+.inicio {
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: -1;
 }
 
 .buscador {
@@ -379,7 +364,6 @@ aside .contenedor-body {
   display: flex;
 }
 
-
 input {
   color: white;
 }
@@ -397,19 +381,12 @@ h2 {
   justify-items: center;
   padding: 5px;
   color: white;
-
-h2{
-    color: white;
-    padding-left: 50px;
-    padding-top: 50px;
-}
-
 }
 .inicio {
+  position: sticky;
   justify-content: center;
   align-items: center;
   color: white;
-
   z-index: -1;
 }
 
@@ -422,7 +399,6 @@ h2{
 button {
   color: white;
   border-radius: 10%;
-
 }
 
 .contenedor-video {
@@ -435,7 +411,6 @@ button {
   height: calc(100vh - 166px);
   justify-items: center;
 }
-
 
 .video-caja {
   position: relative;
@@ -483,16 +458,6 @@ button {
   font-size: 0.8rem;
   margin-top: 10px;
   color: #aaa;
-
-.reel{
-  gap: 25px;
-}
-
-@media only screen and (max-width: 600px) {
-  .contenedor-body{
-    display: none;
-  }
-
 }
 
 .vistas-tiempo {
