@@ -257,14 +257,6 @@ input {
   color: white;
 }
 
-.inicio {
-  position: sticky;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  z-index: -1;
-}
-
 .buscador {
   display: flex;
   color: white;
@@ -395,11 +387,11 @@ h2{
     color: white;
 }
 .inicio {
-  position: sticky;
+
   justify-content: center;
   align-items: center;
   color: white;
-  z-index: -1;
+
 }
 
 .buscador {
