@@ -389,7 +389,7 @@ h2{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     justify-items: center;
-    padding: 5px;
+    padding: 50px;
     color: white;
 }
 
@@ -428,7 +428,9 @@ button {
   cursor: pointer;
 }
 
-
+.reel{
+  gap: 25px;
+}
 @media only screen and (max-width: 600px) {
   .contenedor-body{
     display: none;
@@ -452,6 +454,10 @@ button {
   }
   .contenedor-body{
     display: none;
+  }
+  .division{
+    display: grid;
+    grid-template-columns: 30%, 70%;
   }
 }
 
