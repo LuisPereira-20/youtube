@@ -387,11 +387,9 @@ h2{
     color: white;
 }
 .inicio {
-
   justify-content: center;
   align-items: center;
   color: white;
-
 }
 
 .buscador {
@@ -410,11 +408,6 @@ h2{
   color: white;
 }
 
-button {
-  color: white;
-  border-radius: 10%;
-}
-
 .opciones_1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -429,7 +422,11 @@ button {
 .reel{
   gap: 25px;
 }
+
 @media only screen and (max-width: 600px) {
+  .contenedor-body{
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
