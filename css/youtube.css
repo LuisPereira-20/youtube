@@ -13,8 +13,7 @@ background-color: black;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #202020;
-  background-color: black;
+    background-color: #212121;
 }
 
 
@@ -23,7 +22,7 @@ background-color: black;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #202020;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,10 +41,6 @@ i{
     height: 20px;
     width: 20px;
 }
-
-
-/* padding: 5px 25px;
-    padding-right: 45px;*/
 
 
 /*Barra nav y aside*/
@@ -167,7 +162,7 @@ hr{
     align-items: center;
     justify-content: center;
     z-index: 20;
-    background-color: #313131;
+    background-color:  #212121;
     outline: none;
     border: none;
 }
@@ -182,7 +177,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #181818;
+    background-color: #212121;
 }
 
 .perfil-contenedor{
@@ -262,6 +257,13 @@ input {
   color: white;
 }
 
+.inicio {
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: -1;
+}
 
 .buscador {
   display: flex;
@@ -392,7 +394,13 @@ h2{
     padding: 50px;
     color: white;
 }
-
+.inicio {
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: -1;
+}
 
 .buscador {
   display: flex;
@@ -421,20 +429,15 @@ button {
   gap: 25px;
   justify-items: center;
   color: white;
-  padding-top: 75px;
-}
-.opcion{
-  padding: 25px;
   cursor: pointer;
+  padding-top: 75px;
+  
 }
 
 .reel{
   gap: 25px;
 }
 @media only screen and (max-width: 600px) {
-  .contenedor-body{
-    display: none;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -449,15 +452,9 @@ button {
   .opciones_1 {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .reels {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .contenedor-body{
-    display: none;
-  }
-  .division{
-    display: grid;
-    grid-template-columns: 30%, 70%;
   }
 }
 
@@ -471,10 +468,6 @@ button {
   }
   .contenedor-body{
     display: flex;
-  }
-  .division{
-    display: grid;
-    grid-template-columns: 30% 70%;
   }
 }
 
