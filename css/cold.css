@@ -183,13 +183,42 @@ hr{
     justify-content: space-around;
     justify-items: center;
     gap: 10px;
-    padding: 20px;
-    
+    padding: 15px;
 }
 
 .principal{
     color: white;
     padding: 35px;
+}
+
+.suscripcion{
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #121212;
+    padding: 5px;
+}
+
+button{
+    border-radius: 15px;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #313131;
+}
+
+.canal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.canal img{
+    border-radius: 100%;
+}
+
+.suscriptores h4{
+    margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -203,7 +232,7 @@ hr{
         grid-template-columns: 1fr;
         width: 400px;
         height: 200px;
-   }
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
