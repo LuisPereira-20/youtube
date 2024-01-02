@@ -186,6 +186,9 @@ hr{
     padding: 15px;
 }
 
+.artista-reproduccion{
+    display: flex;
+}
 .principal{
     color: white;
     padding: 35px;
