@@ -234,6 +234,10 @@ hr {
   margin-top: 4%;
 }
 
+.canales-txt:hover{
+  background-color: #4c4c4c;
+}
+
 .canales-txt {
   display: flex;
   gap: 10px;
