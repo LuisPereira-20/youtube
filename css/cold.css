@@ -174,7 +174,7 @@ hr{
 .division{
     padding-top: 75px;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 1fr;
 }
 
 .opcion{
@@ -203,7 +203,7 @@ button{
     border-radius: 15px;
     color: #fff;
     font-size: 16px;
-    padding: 15px;
+    padding: 5px;
     background-color: #313131;
 }
 
@@ -221,31 +221,65 @@ button{
     margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
-
+.video{
+    display: grid;
+    grid-template-columns: 1fr;
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
+    .video{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .principal{
         display: grid;
         grid-template-columns: 1fr;
         width: 400px;
         height: 200px;
     }
+    .recomendaciones{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .video{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 400px;
+        height: 200px;
+    }
+
+    .recomendaciones{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-   .principal{
+    .video{
         display: grid;
         grid-template-columns: 1fr;
-   }
+    }
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .division{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
 
 }
 
