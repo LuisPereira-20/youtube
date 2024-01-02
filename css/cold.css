@@ -225,10 +225,20 @@ button{
     display: grid;
     grid-template-columns: 1fr;
 }
+
+.recomendaciones{
+    display:grid;
+    grid-template-columns: 1fr;
+}
 @media only screen and (max-width: 600px) {
     .video{
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .canal{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: space-around;
     }
     .principal{
         display: grid;
@@ -249,11 +259,14 @@ button{
         display: grid;
         grid-template-columns: 1fr;
     }
+    .canal{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: space-around;
+    }
     .principal{
         display: grid;
         grid-template-columns: 1fr;
-        width: 400px;
-        height: 200px;
     }
 
     .recomendaciones{
@@ -268,8 +281,17 @@ button{
         display: grid;
         grid-template-columns: 1fr;
     }
+    .canal{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: space-around;
+    }
     .principal{
         display: grid;
+        grid-template-columns: 1fr;
+    }
+    .recomendaciones{
+        display:grid;
         grid-template-columns: 1fr;
     }
 }
@@ -280,7 +302,11 @@ button{
         display: grid;
         grid-template-columns: 60% 40%;
     }
-
+    .canal{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
