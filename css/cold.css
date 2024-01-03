@@ -268,6 +268,10 @@ button i {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .nombre {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -285,6 +289,10 @@ button i {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .nombre {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -299,6 +307,10 @@ button i {
     grid-template-columns: 1fr;
   }
   .recomendaciones {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .nombre {
     display: grid;
     grid-template-columns: 1fr;
   }
