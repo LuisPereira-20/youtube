@@ -209,6 +209,7 @@ button {
   padding: 5px;
   background-color: #313131;
   border-style: none;
+  cursor: pointer;
 }
 
 button i {
