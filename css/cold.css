@@ -1,6 +1,9 @@
 * {
-  background-color: black;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  background-color: black;
 }
 
 .header {
@@ -188,6 +191,18 @@ hr {
 
 .artista-reproduccion {
   display: flex;
+}
+
+/* Corrige clase usada en HTML/JS: 'artista-reproduciones' (con s) */
+.artista-reproduciones {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Enlace del nombre del canal en watch */
+.suscriptores h4 a {
+  color: #fff;
+  text-decoration: none;
 }
 .principal {
   color: white;

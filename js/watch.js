@@ -55,8 +55,11 @@
 
     videoWrap.innerHTML = media;
     titleEl.textContent = v.title;
+    const channelName = v.channel?.name || '';
+    const channelUrl = `channel.html?name=${encodeURIComponent(channelName)}`;
     avatar.src = v.channel?.avatar || '';
-    channel.textContent = v.channel?.name || '';
+    if (avatar) { avatar.style.cursor = 'pointer'; avatar.addEventListener('click', () => { window.location.href = channelUrl; }); }
+    channel.innerHTML = `<a href="${channelUrl}" style="color:inherit;text-decoration:none;">${escapeHtml(channelName)}</a>`;
     subs.textContent = v.channel?.subscribers ? `${v.channel.subscribers} de suscriptores` : '';
     likes.textContent = (window.utils?.formatNumber ? window.utils.formatNumber(v.stats?.likes || 0) : (v.stats?.likes || 0));
   }
