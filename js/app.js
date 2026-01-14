@@ -18,6 +18,12 @@
     /* Duration badge */
     .duration-badge { position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,0.8); color: #fff; font-size: 12px; padding: 2px 4px; border-radius: 3px; }
     .video-caja { position: relative; display: block; }
+
+    /* Feed container override + videos grid */
+    .contenedor-video { display: block !important; overflow-y: auto; height: calc(100vh - 166px); background-color: black; }
+    .videos-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 0; padding: 30px 6px; justify-items: center; }
+    @media (max-width: 1050px) { .videos-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 820px)  { .videos-grid { grid-template-columns: 1fr; grid-gap: 10px; padding: 20px; } }
     `;
     const style = document.createElement('style');
     style.textContent = css;
@@ -168,7 +174,7 @@
     const list = filterVideos(videos, qLower, state.cat || 'Todos');
     const chips = renderChipsBar(state.allCategories, state.cat || 'Todos');
     const grid = renderFeedHtml(list);
-    container.innerHTML = `${chips}${grid}`;
+    container.innerHTML = `${chips}<div class="videos-grid">${grid}</div>`;
   }
 
   function setupChips(container, videos) {
