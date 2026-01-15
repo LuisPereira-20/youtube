@@ -91,6 +91,13 @@
   document.addEventListener('DOMContentLoaded', () => {
     injectShortsCss();
 
+    // Normaliza idioma/branding/placeholder
+    try { document.documentElement.lang = 'es'; } catch (e) {}
+    const brand = document.querySelector('#logo-txt');
+    if (brand) brand.textContent = 'YouTube';
+    const input = document.querySelector('.contenedor-busqueda input');
+    if (input) input.setAttribute('placeholder', 'Buscar');
+
     // Dataset de shorts basado en archivos locales disponibles
     const shorts = [
       { id: 's1', src: './videos/reels.mp4', title: 'Shorts #1', channel: 'Reels' },

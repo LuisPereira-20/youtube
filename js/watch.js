@@ -79,6 +79,13 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
+    // Normaliza idioma/branding/placeholder
+    try { document.documentElement.lang = 'es'; } catch (e) {}
+    const brand = qs('#logo-txt');
+    if (brand) brand.textContent = 'YouTube';
+    const input = qs('#search-input');
+    if (input) input.setAttribute('placeholder', 'Buscar');
+
     const id = getParam('id');
     const all = Array.isArray(window.VIDEOS) ? window.VIDEOS : [];
     const video = all.find(v => v.id === id) || all[0];

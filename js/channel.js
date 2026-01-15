@@ -47,6 +47,10 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     injectGridCss();
+    // Normaliza idioma/branding/placeholder
+    try { document.documentElement.lang = 'es'; } catch (e) {}
+    const brand = document.querySelector('#logo-txt');
+    if (brand) brand.textContent = 'YouTube';
     const all = Array.isArray(window.VIDEOS) ? window.VIDEOS : [];
     const name = getParam('name') || '';
     const channel = channelInfo(name, all);
@@ -60,6 +64,7 @@
 
     // Top search
     const input = qs('#search-input');
+    if (input) input.setAttribute('placeholder', 'Buscar');
     const form = qs('#search-form');
     const btn = qs('#search-button');
     const go = () => {

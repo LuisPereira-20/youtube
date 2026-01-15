@@ -24,6 +24,7 @@
     .videos-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 0; padding: 30px 6px; justify-items: center; }
     @media (max-width: 1050px) { .videos-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 820px)  { .videos-grid { grid-template-columns: 1fr; grid-gap: 10px; padding: 20px; } }
+    .empty-state { color: #aaa; padding: 24px; }
     `;
     const style = document.createElement('style');
     style.textContent = css;
@@ -174,7 +175,8 @@
     const list = filterVideos(videos, qLower, state.cat || 'Todos');
     const chips = renderChipsBar(state.allCategories, state.cat || 'Todos');
     const grid = renderFeedHtml(list);
-    container.innerHTML = `${chips}<div class="videos-grid">${grid}</div>`;
+    const body = list.length ? `<div class="videos-grid">${grid}</div>` : `<div class="empty-state">No se encontraron resultados.</div>`;
+    container.innerHTML = `${chips}${body}`;
   }
 
   function setupChips(container, videos) {
@@ -191,6 +193,15 @@
   document.addEventListener('DOMContentLoaded', () => {
     // Inyecta estilos de colapso del sidebar
     injectCollapsedCss();
+
+    // Normaliza idioma/branding/placeholder en Home
+    try { document.documentElement.lang = 'es'; } catch (e) {}
+    const brand = document.querySelector('#logo-txt');
+    if (brand) brand.textContent = 'YouTube';
+    const headerInput = document.querySelector('.contenedor-busqueda input');
+    if (headerInput) headerInput.setAttribute('placeholder', 'Buscar');
+    const mas = document.querySelector('.mas');
+    if (mas) mas.textContent = 'Más de YouTube';
 
     const container = document.querySelector('.contenedor-video');
     if (!container) return;
